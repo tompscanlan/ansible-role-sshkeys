@@ -11,8 +11,6 @@ before_install:
 install:
   - pip install molecule
   - pip install docker
-  - mkdir -p .molecule/roles
-  - ln -s ../ .molecule/roles/sshkeys
 script:
   - molecule test
 
