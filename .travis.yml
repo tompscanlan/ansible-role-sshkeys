@@ -13,7 +13,7 @@ install:
   - pip install docker
 script:
   - >
-    sed -i .orig 's;  playbook.*;  playbook: tests/travis-playbook.yml;' molecule.yml
+    sed -i.orig 's;  playbook.*;  playbook: tests/travis-playbook.yml;' molecule.yml
   - molecule test
 
 notifications:
